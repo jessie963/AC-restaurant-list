@@ -1,0 +1,32 @@
+{{!-- Search Bar --}}
+<div class="container search-bar">
+  <div class="search-bar-outer">
+    <div class="search-bar-inner">
+
+      <form action="/restaurants">
+        <h4 class="mb-2">尋找餐廳：</h4>
+        <div class="input-group">
+          <select name="searchType" class="search-type-option">
+            <option value="all" {{selected.all}}>搜尋全文</option>
+            <option value="name" {{selected.name}}>搜尋餐廳名稱</option>
+            <option value="category" {{selected.category}}>搜尋餐廳類別</option>
+          </select>
+          <input type="text" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..." aria-describedby="search-button" name="keyword" value="{{keyword}}">
+          <div class="input-group-append">
+            <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{{!-- Restaurant List --}}
+<div class="container m-5">
+  <div class="row">
+
+        <h2 class="text-center">沒有搜尋到相關的餐廳</h2>
+
+  </div>
+</div>

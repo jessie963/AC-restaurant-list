@@ -1,0 +1,5 @@
+# module檔案
+/node_modules
+
+# macOS系統檔
+.DS_store
